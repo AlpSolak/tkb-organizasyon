@@ -1,11 +1,169 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TKB Organizasyon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKB | Kurumsal Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <h1>TKB Organizasyon</h1>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Üst Menü (Navbar) -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-900 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl tracking-wider shadow-md">
+                    TKB
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold text-blue-950 tracking-tight block">TKB ŞİRKETLER GRUBU</span>
+                    <span class="text-xs text-slate-500 font-medium">Resmi Kurumsal Web Sitesi</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="#anasayfa" class="hover:text-blue-900 transition">Ana Sayfa</a>
+                <a href="#hakkimizda" class="hover:text-blue-900 transition">Hakkımızda</a>
+                <a href="#hizmetler" class="hover:text-blue-900 transition">Hizmetler</a>
+                <a href="#projeler" class="hover:text-blue-900 transition">Projeler</a>
+                <a href="#iletisim" class="bg-blue-900 text-white px-5 py-2.5 rounded-lg hover:bg-blue-800 transition shadow-sm">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section id="anasayfa" class="relative bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-blue-800/60 text-blue-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-6 border border-blue-700/50">
+                Geleceğe Değer Katıyoruz
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                Yenilikçi Çözümler ve Profesyonel Yaklaşım: <span class="text-blue-400">TKB Farkı</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                TKB olarak sektördeki gücümüzü, kaliteli hizmet anlayışımızdan ve müşteri odaklı vizyonumuzdan alıyoruz.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#hizmetler" class="bg-white text-blue-950 font-semibold px-8 py-4 rounded-xl shadow-lg hover:bg-slate-100 transition">
+                    Hizmetlerimizi Keşfedin
+                </a>
+                <a href="#iletisim" class="border border-slate-400/50 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 transition">
+                    İletişime Geçin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="hakkimizda" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-blue-900 font-bold tracking-wider text-sm uppercase">Kurumsal Kimlik</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-6">Güvenilir, Yenilikçi ve Sürdürülebilir</h2>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    TKB; dinamik kadrosu ve sektördeki tecrübesiyle iş ortaklarına yüksek standartlarda çözümler sunar. Şeffaflık, kalite ve sürekli gelişim ilkelerimizle geleceği bugünden inşa ediyoruz.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-200">
+                    <div>
+                        <span class="block text-3xl font-black text-blue-900">%100</span>
+                        <span class="text-sm text-slate-500 font-medium">Müşteri Memnuniyeti</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-black text-blue-900">50+</span>
+                        <span class="text-sm text-slate-500 font-medium">Başarılı Proje</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-blue-900/5 p-8 rounded-2xl border border-blue-900/10">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-900 text-white p-3 rounded-xl mt-1"><i class="fa-solid fa-bullseye"></i></div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900">Misyonumuz</h3>
+                            <p class="text-slate-600 text-sm mt-1">Müşterilerimizin ihtiyaçlarına en uygun, hızlı ve sürdürülebilir katma değerli çözümler üretmek.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-900 text-white p-3 rounded-xl mt-1"><i class="fa-solid fa-eye"></i></div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900">Vizyonumuz</h3>
+                            <p class="text-slate-600 text-sm mt-1">Sektöründe öncü, güvenilirliğiyle bilinen ve global standartları benimseyen lider bir marka olmak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetler / Çözümler -->
+    <section id="hizmetler" class="bg-slate-100 py-24 px-4 sm:px-6 lg:px-8 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-900 font-bold tracking-wider text-sm uppercase">Neler Yapıyoruz?</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Kurumsal Hizmetlerimiz</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Kart 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Teknolojik Çözümler</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">İş süreçlerinizi dijitalleştiren, modern ve ölçeklenebilir yazılım altyapıları kuruyoruz.</p>
+                </div>
+                <!-- Kart 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Stratejik Danışmanlık</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Şirketinizin büyüme potansiyelini artıracak pazar analizleri ve stratejik planlar sunuyoruz.</p>
+                </div>
+                <!-- Kart 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Operasyonel Destek</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Operasyonlarınızın kesintisiz, güvenli ve en verimli şekilde yürütülmesini sağlıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim / Footer -->
+    <footer id="iletisim" class="bg-blue-950 text-white pt-16 pb-12 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="bg-white text-blue-950 w-8 h-8 rounded-lg flex items-center justify-center font-bold text-lg">TKB</div>
+                    <span class="text-lg font-bold tracking-wider">TKB ŞİRKETLER GRUBU</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    İşbirliği fırsatları ve kurumsal talepleriniz için bizimle iletişime geçebilirsiniz.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-base mb-4 tracking-wide">İletişim Bilgileri</h4>
+                <p class="text-slate-400 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2"></i> Şirket Adresiniz, İstanbul / Türkiye</p>
+                <p class="text-slate-400 text-sm mb-2"><i class="fa-solid fa-envelope mr-2"></i> bilgi@tkbsirket.com</p>
+                <p class="text-slate-400 text-sm"><i class="fa-solid fa-phone mr-2"></i> +90 (212) 000 00 00</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-base mb-4 tracking-wide">Sosyal Medya</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-blue-900/60 rounded-lg flex items-center justify-center hover:bg-blue-800 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-10 h-10 bg-blue-900/60 rounded-lg flex items-center justify-center hover:bg-blue-800 transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 bg-blue-900/60 rounded-lg flex items-center justify-center hover:bg-blue-800 transition"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-blue-900/50 text-center text-slate-500 text-xs">
+            &copy; 2026 TKB Şirketler Grubu. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
 </body>
 </html>
